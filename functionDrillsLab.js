@@ -219,6 +219,17 @@ function theEliminator(contestants, loser) {
 }
  console.log(theEliminator(contestants, loser))
 
+ function theEliminator(contestants, loser) {     ///another way to do it
+ for(i=0; i<contestants.length; i++) {
+   if(contestants[i] === loser) {
+     contestants.splice(i, 1);
+   }
+  console.log(contestants);
+  return contestants; 
+ }
+
+ theEliminator(contestants, loser)
+
 
 // function theEliminator(contestantsarr, loserarr) {
 //   for (let i=0; i < contestantsarr.length; i++) {
