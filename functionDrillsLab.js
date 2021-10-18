@@ -22,11 +22,11 @@ helloWorld()
 
 //CODE HERE
 
-// function printName(name) {
-//   console.log(name)
-// }
+function printName(name) {
+  console.log(name)
+}
 
-// printName('Edrea Robinson')
+printName('Edrea Robinson')
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -59,10 +59,10 @@ greeting('Edrea')
 //CODE HERE
 
 function add(num1, num2) {
-  let num1Parse = parseInt(num1)
-  let num2Parse = parseInt(num2)
+  num1 = parseInt(num1)
+  num2 = parseInt(num2)
 
-  return num1Parse + num2Parse
+  return num1 + num2
 }
 
 
@@ -124,7 +124,7 @@ console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
-let namesArr2 = ['Sarah', 'Mary', 'Elizabeth', 'Cat']
+// let namesArr2 = ['Sarah', 'Mary', 'Elizabeth', 'Cat']
 
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
@@ -135,7 +135,7 @@ let namesArr2 = ['Sarah', 'Mary', 'Elizabeth', 'Cat']
 //CODE HERE
 
 function printAllNames(name) {
-  for (let i=0; i <= name.length-1; i++) {
+  for (let i=0; i < name.length; i++) {
     console.log(name[i])
   }
 }
@@ -187,11 +187,12 @@ function bigOrSmall(arr) {
       answers.push("small");
     }
   }
-  return answers
+  let arrayEvaluator = answers
+  console.log(arrayEvaluator)
 }
 
-let arrayEvaluator = (bigOrSmall(bigOrSmallArray))
-console.log(arrayEvaluator)
+bigOrSmall(bigOrSmallArray)
+
 
 
 
@@ -204,6 +205,33 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+
+function theEliminator(contestants, loser) {
+  let i = 0;
+  while(i < contestants.length) {
+    if (contestants[i] === loser) {
+      contestants.splice(i,1)
+    } else {
+      ++i;
+    }
+  }
+  return contestants;
+}
+ console.log(theEliminator(contestants, loser))
+
+
+// function theEliminator(contestantsarr, loserarr) {
+//   for (let i=0; i < contestantsarr.length; i++) {
+//     for (let j=0; j < loserarr.length; i++) {
+//       if (contestantsarr[i].includes(loserarr[j]) === true) {
+        
+//       } 
+//     }
+//     if (contestants.includes(loser) = true) {
+      
+//     }
+//   }
+// }
 
 
 ////////////////// PROBLEM 11 ////////////////////
