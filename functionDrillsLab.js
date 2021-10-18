@@ -58,7 +58,18 @@ greeting('Edrea')
 
 //CODE HERE
 
+function add(num1, num2) {
+  let num1Parse = parseInt(num1)
+  let num2Parse = parseInt(num2)
 
+  return num1Parse + num2Parse
+}
+
+
+let sum = add(10, 5)
+console.log(sum)
+
+ 
 ////////////////// PROBLEM 5 ////////////////////
 /*
   Write a function called nameCheck that takes in a name parameter.
@@ -69,6 +80,19 @@ greeting('Edrea')
 */
 
 //CODE HERE
+
+function nameCheck(name) {
+  if (name === 'Steven') {
+    return "What is up Steven?"
+  } else if (name === 'Bryan') {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
+
+let nameGreeting = nameCheck('Edrea')
+console.log (nameGreeting)
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -83,6 +107,20 @@ greeting('Edrea')
 
 //CODE HERE
 
+function faveColorFinder(color) {
+  if (color === 'red') {
+    return 'red is a great color'
+  } else if (color === 'green'){
+    return 'green is a solid favorite color'
+  } else if (color === 'black'){
+    return 'so trendy'
+  } else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
+
+let colorRating = faveColorFinder('black')
+console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
