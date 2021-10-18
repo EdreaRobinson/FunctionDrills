@@ -6,6 +6,12 @@
 
 //CODE HERE
 
+function helloWorld() {
+  console.log("Hello, World!")
+}
+
+helloWorld()
+
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
@@ -15,6 +21,12 @@
 */
 
 //CODE HERE
+
+// function printName(name) {
+//   console.log(name)
+// }
+
+// printName('Edrea Robinson')
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -30,6 +42,11 @@
 
 //CODE HERE
 
+function greeting(name) {
+ 
+  console.log(`Hello, ${name}`)
+}
+greeting('Edrea')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
