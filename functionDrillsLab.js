@@ -124,6 +124,8 @@ console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
+let namesArr2 = ['Sarah', 'Mary', 'Elizabeth', 'Cat']
+
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
@@ -131,6 +133,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+function printAllNames(name) {
+  for (let i=0; i <= name.length-1; i++) {
+    console.log(name[i])
+  }
+}
+
+printAllNames(namesArr)
 
 
 ////////////////// PROBLEM 8 ////////////////////
@@ -143,6 +153,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function thatsOdd(num) {
+  if (num % 2 === 0) {
+    return "That's not odd!"
+  } else {
+    return "That is odd indeed!"
+  }
+}
+
+let oddChecker = thatsOdd(44)
+console.log(oddChecker)
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -156,6 +176,23 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+
+
+function bigOrSmall(arr) {
+  let answers = [];
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 100) {
+      answers.push("big");
+    } else {
+      answers.push("small");
+    }
+  }
+  return answers
+}
+
+let arrayEvaluator = (bigOrSmall(bigOrSmallArray))
+console.log(arrayEvaluator)
+
 
 
 ////////////////// PROBLEM 10 ////////////////////
